@@ -1,0 +1,21 @@
+{
+	"name":  "Your Youtube",
+	"version": "1.0",
+  "description": "Автоматически нажимает Пропустить рекламу на ютубе + скрывает всплывающую рекламу. SmILe",
+	"content_scripts": [
+	  {
+	    "matches": [
+	      "*://www.youtube.com/*"
+	    ],
+	    "js": ["content.js"]
+	  }
+	],
+  "permissions" : [
+    "declarativeContent",
+		"activeTab"
+  ],
+  "icons" : {
+    "128" : "icon/icon.png"
+  },
+	"manifest_version": 2
+}
