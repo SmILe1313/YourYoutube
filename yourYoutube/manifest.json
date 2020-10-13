@@ -15,7 +15,7 @@
 		"activeTab"
   ],
   "icons" : {
-    "128" : "icon/icon.png"
+    "128" : "icon.png"
   },
 	"manifest_version": 2
 }
