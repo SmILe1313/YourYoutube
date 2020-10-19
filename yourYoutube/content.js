@@ -18,13 +18,15 @@ var adSkipCnt = 0;
 setInterval(() => {
     var elements = window.document.getElementsByClassName("ytp-ad-text ytp-ad-skip-button-text");
     if (elements.length !== 0) {
-      try {
-        elements[0].click();
-        adSkipCnt += 1;
-        console.log('Реклама пропущена :)');
-        console.log('Всего пропущено: ', adSkipCnt);
-      } catch (e) {
-        e => console.log(e)
-      }
+		setTimeout(() => {
+		  try {
+			elements[0].click();
+			adSkipCnt += 1;
+			console.log('Реклама пропущена :)');
+			console.log('Всего пропущено: ', adSkipCnt);
+		  } catch (e) {
+			e => console.log(e)
+		  }
+		}, 5000)
     }
-  }, 2500);
+  }, 1000);
